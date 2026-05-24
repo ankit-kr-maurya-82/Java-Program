@@ -1,30 +1,19 @@
 
 import java.util.*;
-
+    // camelCase - java
+    // print_name - python
 public class Func{
-    public static void printMyName(String name){
+
+    // my function create
+    public static void myName(String name){
         System.out.println(name);
+        return;
     }
-    public static int age(int age){
-        return age;
-    }
-
-    
-
-
-    public static int calculateProduct(int a, int b) {
-        return a*b;
-    }
+        
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // String name = sc.next();
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        System.out.println("Product of 2 numbers is :  "+calculateProduct(a, b));
-        int age = sc.nextInt();
-        int myAge = age(age);
-        System.out.println("age: "+myAge);
+       Scanner sc = new Scanner(System.in);
+       String name = sc.nextLine();
+       myName(name);  //call
     }
 }
