@@ -1,6 +1,6 @@
 public class StrBuild{
     public static void main(String args[]) {
-        StringBuilder sb = new StringBuilder("Tony");
+        StringBuilder sb = new StringBuilder("Ankit");
         System.out.println(sb);
 
         // char at index 0
@@ -14,12 +14,12 @@ public class StrBuild{
         sb.insert(0, 'S');
         System.out.println(sb);
 
-        sb.insert(3, 'n');
+        sb.insert(2, 'a');
         System.out.println(sb);
 
-        // delete the extra 'n'
+        // delete the extra 'a'
 
-        sb.delete(3, 4);
+        sb.delete(2, 3);
         System.out.println(sb);
     }
 }
