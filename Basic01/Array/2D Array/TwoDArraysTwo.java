@@ -11,9 +11,9 @@ public class TwoDArraysTwo{
         // colums = 4
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter numbers of rows :");
+        System.out.print("Enter numbers of rows : ");
         int rows = sc.nextInt();
-        System.out.println("Enter numbers of columns :");
+        System.out.print("Enter numbers of columns : ");
         int cols = sc.nextInt();
 
         int[][] numbers = new int[rows][cols];
@@ -33,7 +33,7 @@ public class TwoDArraysTwo{
         // output
         for(int i=0; i<rows; i++){
             for(int j=0; j<cols; j++){
-                System.out.println(numbers[i][j] + " ");
+                System.out.print(numbers[i][j] + " ");
             }
             System.out.println();
         }
