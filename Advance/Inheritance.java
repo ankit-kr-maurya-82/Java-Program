@@ -27,6 +27,6 @@ class Circle extends  Shape{
 class Inheritance {
     public void main(){
         Triangle t1 = new Triangle();
-        t1.color = "red";
+        // t1.color = "red";
     }
 }
