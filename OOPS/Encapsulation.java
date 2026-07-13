@@ -17,7 +17,7 @@ class Account{
     }
 }
 
-public class Bank{
+public class Encapsulation{
     public void main(){
         Account account1 = new Account();
         account1.name = "Ankit";
