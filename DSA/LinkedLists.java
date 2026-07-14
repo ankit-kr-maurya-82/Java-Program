@@ -95,9 +95,9 @@ class LinkedLists{
         list.addFirst("a");
         list.addFirst("is");
         list.printList();
-        list.addLast("list");
+        list.addLast("Animal");
         list.printList();
-        list.addFirst("this");
+        list.addFirst("Dog");
         list.printList();
 
         list.deleteFirst();
