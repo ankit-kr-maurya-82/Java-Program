@@ -59,6 +59,37 @@ class LinkedLists{
         System.out.println("NULL");
     }
 
+    // delete first
+    public void deleteFirst(){
+        if(head == null){
+            System.out.println("The list is empty");
+        }
+
+        head = head.next;
+    }
+
+    // delete last
+
+    public void deleteLast(){
+        if(head == null){
+            System.out.println("This list is empty");
+        }
+
+        if(head.next == null){
+            head = null;
+            return;
+        }
+
+        Node secondLast = head;
+        Node lastNode = head.next;
+        while(lastNode.next !=null){
+            lastNode = lastNode.next;
+            secondLast = secondLast.next;
+        }
+        secondLast.next = null;
+
+    }
+
     public static void main(String[] args) {
         LinkedLists list = new LinkedLists();
         list.addFirst("a");
@@ -67,6 +98,12 @@ class LinkedLists{
         list.addLast("list");
         list.printList();
         list.addFirst("this");
+        list.printList();
+
+        list.deleteFirst();
+        list.printList();
+
+        list.deleteLast();
         list.printList();
     }
 }
