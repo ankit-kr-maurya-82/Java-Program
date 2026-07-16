@@ -1,13 +1,12 @@
 class lengthOfLastWord{
     public static void main(){
-        String str = "Hello world";
+        String s = "Hello world";
         
-        String[] words= str.split(" ");
+        String[] words= s.split(" ");
         System.out.println(words[words.length - 1]);
         String countString = words[words.length - 1];
-
     
-    System.out.println(countString.length());
+        System.out.println(countString.length());
 
 
     }
