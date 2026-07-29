@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 // package bank;
 // Encapsulation
 
@@ -17,6 +20,13 @@ class Account{
     }
 }
 
+
+class Student{
+    String name;
+    String course;
+    int rollNo;
+}
+
 public class Encapsulation{
     public void main(){
         Account account1 = new Account();
@@ -24,5 +34,13 @@ public class Encapsulation{
         account1.email = "ankit@gmail.com";
         account1.setPassword("abcd");
         System.out.println(account1.getPassword());
+
+        Student student1 = new Student();
+        System.out.print("Enter name: ");
+        Scanner sc = new Scanner(System.in);
+        String Name = sc.nextLine();
+        student1.name = Name;
+        System.err.println("name: "+ student1.name);
+
     }
 }
