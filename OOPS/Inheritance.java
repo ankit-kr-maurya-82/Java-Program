@@ -8,7 +8,7 @@ class Shape{
 
 class Triangle extends Shape{
     public void area(int l, int h){
-        System.out.println(1/2*l*h);
+        System.out.println((l*h)/2);
     }
 }
 
@@ -28,5 +28,9 @@ class Inheritance {
     public void main(){
         Triangle t1 = new Triangle();
         // t1.color = "red";
+        int l = 8;
+        int h = 7;
+        t1.area();
+        t1.area(8,7);
     }
 }
