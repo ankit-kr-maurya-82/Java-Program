@@ -28,8 +28,6 @@ class Inheritance {
     public void main(){
         Triangle t1 = new Triangle();
         // t1.color = "red";
-        int l = 8;
-        int h = 7;
         t1.area();
         t1.area(8,7);
     }
