@@ -1,53 +1,43 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 class ArrayLists{
     public static void main(String[] args) {
-        ArrayList<Integer> list1 = new ArrayList<Integer>();
-        ArrayList<String> fruits = new ArrayList<String>();
-        ArrayList<String> colors = new ArrayList<String>();
-
+        ArrayList<String> cars = new ArrayList<String>();
         // add elements
-        // fruits.add("Apple");
-        // fruits.add("Banana");
-        // fruits.add("Cherry");
-        // fruits.add("Anas");
-        colors.add("red");
-        colors.add("yellow");
-        colors.add("black");
+        cars.add("BMW");
+        cars.add("Mustang");
+        cars.add("Thar");
+        cars.add("Tata");
+        cars.add("Ford");
 
-        System.out.println(colors);
+        System.out.println(cars);
 
         // get elements
-        // String getelement = fruits.get(1);
-        String getelement = colors.get(1);
-        System.out.println(getelement);
+        for(int i=0; i<cars.size();i++){
+            System.out.println(i + " " + cars.get(i));
+        }
 
-        // add el in between
-        // fruits.add(1,"Grapes");
-        // System.out.println(fruits);
+        int Size = cars.size();
+        System.out.println("size : "+Size);
+       
+    // add elements in between
+    cars.add(2,"Tesla");
+    System.out.println("add elements in between : "+cars);
+    
 
         // set element
-        // fruits.set(0,"cherry");
-        // System.out.println(fruits);
+
+        cars.set(0,"Maruti");
+        System.out.println("after set: "+cars);
 
         // delete element
-        // fruits.remove(2);
-        // System.out.println(fruits);
-
-        // size 
-        // int size = fruits.size();
-        // System.out.println(size);
-
-        // loops
-        // for(int i=0; i<fruits.size(); i++){
-        //     System.out.println(fruits.get(i));
-        // }
-        // System.out.println("");
-
+        cars.remove(2);
+        System.out.println("after remove : "+cars);
 
         // sorting
-        // Collections.sort(fruits);
-        // System.out.println(fruits);
+        Collections.sort(cars);
+        System.out.println("after sorting: "+cars);
     }
     
 }
