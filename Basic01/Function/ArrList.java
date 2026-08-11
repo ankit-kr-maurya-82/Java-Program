@@ -52,5 +52,9 @@ class ArrList{
         }
         System.out.println(listNum);
 
+
+        List<String> smallList = list2.subList(1,4);
+        System.out.println(smallList);
+
     }
 }
